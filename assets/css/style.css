@@ -1,0 +1,76 @@
+.row {
+    height: 2000px;
+}
+
+.col-md-8 {
+    text-align: center;
+}
+
+.col-md-2 {
+    height: 100%;
+    background-image: url(https://wallpapercave.com/wp/wp1902697.jpg)
+}
+
+#timer {
+    color: red;
+}
+
+
+body {
+    background-color: #ECBA82;
+}
+
+
+h1 {
+    margin: 40px 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100px;
+    background-color: #006622;
+    border: round;
+}
+
+.btn-primary {
+    padding: 30px 150px;
+    font-size: 30px;
+    background-color: #93032E;
+}
+
+.btn-primary:visited {
+    background-color: #93032E;
+}
+
+
+/*how do i make this color #93032E when i'm clicking it
+*/
+
+.btn-primary:active {
+    background-color: #93032E;
+}
+
+h4 {
+    padding: 20px;
+    font-family: 'Bungee', cursive;
+}
+
+
+h3 {
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.question-area {
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    margin-right: 7px;
+}
+
+#timer {
+    font-size: 100px;
+    font-family: 'Bungee', cursive;
+}
