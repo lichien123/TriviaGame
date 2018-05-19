@@ -74,3 +74,8 @@ label {
     font-size: 100px;
     font-family: 'Bungee', cursive;
 }
+
+#results {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+}

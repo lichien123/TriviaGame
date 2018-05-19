@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
-    
+
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         </div>
         <div class="col-md-8">
             <h1>POKEMON TRIVIA</h1>
-            <button type="button" class="btn btn-primary" id="start" onclick="decreaseTimer(); showQuiz();">Start Game</button>
+            <button type="button" id="start-button" class="btn btn-primary" id="start">Start Game</button>
             <div id="main" class="hidden">
                 <h4>Time Remaining: <span id="timer">45</span> Seconds</h4>
                 <div class="question-area">
@@ -38,94 +38,95 @@
                         </div>
                         <h3>How many generations of Pokemon are there?</h3>
                         <div>
-                            <input type="radio" name="question-1" id="question-1" value="small" />
+                            <input type="radio" name="question-1" id="question-1" value="Six" />
                             <label for="sizeSmall">Six</label>
-                            <input type="radio" name="question-1" id="question-1" value="medium" />
+                            <input type="radio" name="question-1" id="question-1" value="One, trick question" />
                             <label for="sizeMed">One, trick question</label>
-                            <input type="radio" name="question-1" id="question-1" value="large" />
+                            <input type="radio" name="question-1" id="question-1" value="Seven" />
                             <label for="sizeLarge">Seven</label>
                         </div>
                         <h3>What is the name of the first Gym Leader from the Kanto Reigon?</h3>
                         <div>
-                            <input type="radio" name="question-2" id="question-2" value="small" />
+                            <input type="radio" name="question-2" id="question-2" value="Ash" />
                             <label for="sizeSmall">Ash</label>
-                            <input type="radio" name="question-2" id="question-2" value="medium" />
+                            <input type="radio" name="question-2" id="question-2" value="Misty" />
                             <label for="sizeMed">Misty</label>
-                            <input type="radio" name="question-2" id="question-2" value="large" />
+                            <input type="radio" name="question-2" id="question-2" value="Brock" />
                             <label for="sizeLarge">Brock</label>
                         </div>
                         <h3>Lugia was featured in which Pokemon movie?</h3>
                         <div>
-                            <input type="radio" name="question-3" id="question-3" value="small" />
+                            <input type="radio" name="question-3" id="question-3" value="Pokemon 2000" />
                             <label for="sizeSmall">Pokemon 2000</label>
-                            <input type="radio" name="question-3" id="question-3" value="medium" />
+                            <input type="radio" name="question-3" id="question-3" value="Pokemon 4ever" />
                             <label for="sizeMed">Pokemon 4ever</label>
-                            <input type="radio" name="question-3" id="question-3" value="large" />
+                            <input type="radio" name="question-3" id="question-3" value="Pokemon X and Y" />
                             <label for="sizeLarge">Pokemon X and Y</label>
                         </div>
                         <h3>What type is #24 Arbok?</h3>
                         <div>
-                            <input type="radio" name="question-4" id="sizeSmall" value="small" />
+                            <input type="radio" name="question-4" id="sizeSmall" value="Normal" />
                             <label for="sizeSmall">Normal</label>
-                            <input type="radio" name="question-4" id="sizeMed" value="medium" />
+                            <input type="radio" name="question-4" id="sizeMed" value="Poison" />
                             <label for="sizeMed">Poison</label>
-                            <input type="radio" name="question-4" id="sizeLarge" value="large" />
+                            <input type="radio" name="question-4" id="sizeLarge" value="Fire" />
                             <label for="sizeLarge">Fire</label>
                         </div>
                         <h3>Which Legendary Pokemon created the Ocean?</h3>
                         <div>
-                            <input type="radio" name="question-5" id="sizeSmall" value="small" />
+                            <input type="radio" name="question-5" id="sizeSmall" value="Kyogre" />
                             <label for="sizeSmall">Kyogre</label>
-                            <input type="radio" name="question-5" id="sizeMed" value="medium" />
+                            <input type="radio" name="question-5" id="sizeMed" value="Keldeo" />
                             <label for="sizeMed">Keldeo</label>
-                            <input type="radio" name="question-5" id="sizeLarge" value="large" />
+                            <input type="radio" name="question-5" id="sizeLarge" value="Squirtle" />
                             <label for="sizeLarge">Squirtle</label>
                         </div>
                         <h3>Which Pokemon does Eevee evolve into when its friendship stat is maxed out at night?</h3>
                         <div>
-                            <input type="radio" name="question-6" id="sizeSmall" value="small" />
+                            <input type="radio" name="question-6" id="sizeSmall" value="Flareon" />
                             <label for="sizeSmall">Flareon</label>
-                            <input type="radio" name="question-6" id="sizeMed" value="medium" />
+                            <input type="radio" name="question-6" id="sizeMed" value="Umbreon" />
                             <label for="sizeMed">Umbreon</label>
-                            <input type="radio" name="question-6" id="sizeLarge" value="large" />
+                            <input type="radio" name="question-6" id="sizeLarge" value="Sylveon" />
                             <label for="sizeLarge">Sylveon</label>
                         </div>
                         <h3>Spikes is what type of move?</h3>
                         <div>
-                            <input type="radio" name="question-7" id="sizeSmall" value="small" />
+                            <input type="radio" name="question-7" id="sizeSmall" value="Normal" />
                             <label for="sizeSmall">Normal</label>
-                            <input type="radio" name="question-7" id="sizeMed" value="medium" />
+                            <input type="radio" name="question-7" id="sizeMed" value="Steel" />
                             <label for="sizeMed">Steel</label>
-                            <input type="radio" name="question-7" id="sizeLarge" value="large" />
+                            <input type="radio" name="question-7" id="sizeLarge" value="Poison" />
                             <label for="sizeLarge">Poison</label>
                         </div>
                         <h3>Which move has 100% chance of confusion when it hits?</h3>
                         <div>
-                            <input type="radio" name="question-8" id="sizeSmall" value="small" />
+                            <input type="radio" name="question-8" id="sizeSmall" value="Dynamic Punch" />
                             <label for="sizeSmall">Dynamic Punch</label>
-                            <input type="radio" name="question-8" id="sizeMed" value="medium" />
+                            <input type="radio" name="question-8" id="sizeMed" value="Metronome" />
                             <label for="sizeMed">Metronome</label>
-                            <input type="radio" name="question-8" id="sizeLarge" value="large" />
+                            <input type="radio" name="question-8" id="sizeLarge" value="Dizzy Punch" />
                             <label for="sizeLarge">Dizzy Punch</label>
                         </div>
                         <h3>The professors from each reigon are all named after types of...</h3>
                         <div>
-                            <input type="radio" name="question-9" id="sizeSmall" value="small" />
+                            <input type="radio" name="question-9" id="sizeSmall" value="Pokeballs" />
                             <label for="sizeSmall">Pokeballs</label>
-                            <input type="radio" name="question-9" id="sizeMed" value="medium" />
+                            <input type="radio" name="question-9" id="sizeMed" value="Colors" />
                             <label for="sizeMed">Colors</label>
-                            <input type="radio" name="question-9" id="sizeLarge" value="large" />
+                            <input type="radio" name="question-9" id="sizeLarge" value="Trees" />
                             <label for="sizeLarge">Trees</label>
                         </div>
                     </form>
                 </div>
-                <button type="button" class="btn btn-primary" onclick="showResultsPage(); tallyResults();">Done</button>
+                <button type="button" id="finish" class="btn btn-primary">Done</button>
 
             </div>
             <div id="results" class="hidden">
+                <br>
                 <p>Answers correct: <span id="correct"></span></p>
                 <p>Answers incorrect: <span id="incorrect"></span></p>
-                <p>Questions unanswered: <span id="unanswered"></span></p>
+                <!-- <p>Questions unanswered: <span id="unanswered"></span></p> -->
             </div>
         </div>
         <div class="col-md-2">
